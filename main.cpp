@@ -44,7 +44,7 @@ bool init() {
     } else {
         window = SDL_CreateWindow("Pendulum", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WINDOW_WIDTH, WINDOW_HEIGHT, SDL_WINDOW_SHOWN);
         if ( window == NULL ) {
-            std::cerr << "Erro while creating SDL window --> " << SDL_GetError() << std::endl;
+            std::cerr << "Error while creating SDL window --> " << SDL_GetError() << std::endl;
             success = false;
         } else {
             renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
